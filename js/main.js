@@ -1,6 +1,7 @@
 // Dashboard Time 
 
-let date = new Date().toDateString();
+if(document.getElementById('dashboard-date')){
+    let date = new Date().toDateString();
 date = date.split(' ');
 
 let dashboardDate = document.getElementById('dashboard-date');
@@ -12,12 +13,20 @@ dashboardDate.innerHTML = `
 `
 
 
+
+}
+
 // completed Button 
 
-let completedBtns = document.querySelectorAll('.completed');
+if(document.querySelectorAll('.completed')){
+    let completedBtns = document.querySelectorAll('.completed');
 
-let assignedTask = completedBtns.length;
-document.getElementById('task-assigned').innerText = assignedTask;
+    let assignedTask = completedBtns.length;
+    if(document.getElementById('task-assigned')){
+        document.getElementById('task-assigned').innerText = assignedTask;
+    }
+   
+    
 
 
 for (let btn of completedBtns) {
@@ -90,23 +99,55 @@ for (let btn of completedBtns) {
 }
 
 
+}
+
+
 
 // Clear History
 
+if(document.getElementById('clear-history')){
 document.getElementById('clear-history').addEventListener('click' , function(){
    document.getElementById('notifications').innerHTML = "";
 
 })
 
-
+}
 // Discover something new (Redirect to the new page)
+if(document.getElementById('discover')){
 
-document.getElementById('discover').addEventListener('click' ,function(){
-    window.location.href = './faq.html'
-} );
+    document.getElementById('discover').addEventListener('click' ,function(){
+        window.location.href = './faq.html'
+    } );
+    
+}
 
 // Back to Desk (redirect to home page) back-to-desk
+if(document.getElementById('back-to-desk')){
 
-document.getElementById('back-to-desk').addEventListener('click' ,function(){
-    window.location.href = './index.html'
-} );
+    document.getElementById('back-to-desk').addEventListener('click' ,function(){
+        window.location.href = './index.html'
+    } );
+    
+}
+
+
+// Theme Setup
+
+if(document.getElementById('theme-btn')){
+
+document.getElementById('theme-btn').addEventListener('click' , function(){
+    let random1 = parseInt(Math.random() * 255);
+    let random2 = parseInt(Math.random() * 255);
+    let random3 = parseInt(Math.random() * 255);
+    
+    randomColors = `rgb(${random1} ,${random2},${random3})`;
+
+    document.querySelector('body').classList.remove('bg-[#f4f7ff]');
+    document.querySelector('body').style.backgroundColor = randomColors;
+    console.log(randomColors)
+
+
+})
+
+    
+}
