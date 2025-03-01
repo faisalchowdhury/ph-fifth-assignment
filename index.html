@@ -44,7 +44,7 @@
             <div class="flex items-center gap-3">
                 <div>
                     <h2 class="bg-[#F4F7FF] px-3 py-2 space-x-1 rounded-3xl sm:text-xl font-semibold"><i
-                            class="text-[#3752FD] fa-solid fa-square-check"></i> <span>24</span></h2>
+                            class="text-[#3752FD] fa-solid fa-square-check"></i> <span id="total-task">23</span></h2>
                 </div>
 
                 <div>
@@ -70,7 +70,7 @@
                         </div>
                         <div>
                             <p class="text-sm text-[#00303C]">Task Assigned </p>
-                            <h2 class="text-xl font-semibold">06</h2>
+                            <h2 id="task-assigned" class="text-xl font-semibold"></h2>
                         </div>
                     </div>
     
@@ -89,9 +89,8 @@
                             <img class="w-5" src="assets/calender.png" alt="">
     
                         </div>
-                        <div>
-                            <p class="text-sm text-[#00303C]">Wed, </p>
-                            <h2 class="text-md font-semibold text-[#00303C]">Jul 28 2025</h2>
+                        <div id="dashboard-date">
+                            
                         </div>
                     </div>
                 </div>
@@ -117,7 +116,7 @@
                               <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
                             </div>
                             
-                            <button class="bg-[#3752FD] text-xs  text-white py-2 px-4 rounded-md">Completed</button>
+                            <button class="completed bg-[#3752FD] text-xs hover:bg-slate-500  text-white py-2 px-4 rounded-md disabled:bg-gray-300" >Completed</button>
                         </div>
                     </div>
                     <!-- Card box -->
@@ -138,7 +137,7 @@
                             <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
                           </div>
                           
-                          <button class="bg-[#3752FD] text-xs  text-white py-2 px-4 rounded-md">Completed</button>
+                          <button class="completed bg-[#3752FD] text-xs hover:bg-slate-500  text-white py-2 px-4 rounded-md disabled:bg-gray-300">Completed</button>
                       </div>
                   </div>
                   <!-- Card box -->
@@ -159,7 +158,7 @@
                             <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
                           </div>
                           
-                          <button class="bg-[#3752FD] text-xs  text-white py-2 px-4 rounded-md">Completed</button>
+                          <button class="completed bg-[#3752FD] text-xs hover:bg-slate-500  text-white py-2 px-4 rounded-md disabled:bg-gray-300">Completed</button>
                       </div>
                   </div>
                   <!-- Card box -->
@@ -180,7 +179,7 @@
                             <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
                           </div>
                           
-                          <button class="bg-[#3752FD] text-xs  text-white py-2 px-4 rounded-md">Completed</button>
+                          <button class="completed bg-[#3752FD] text-xs hover:bg-slate-500  text-white py-2 px-4 rounded-md disabled:bg-gray-300">Completed</button>
                       </div>
                   </div>
                   <!-- Card box -->
@@ -200,7 +199,7 @@
                             <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
                           </div>
                           
-                          <button class="bg-[#3752FD] text-xs  text-white py-2 px-4 rounded-md">Completed</button>
+                          <button class="completed bg-[#3752FD] text-xs hover:bg-slate-500  text-white py-2 px-4 rounded-md disabled:bg-gray-300">Completed</button>
                       </div>
                   </div>
                   <!-- Card box -->
@@ -220,7 +219,7 @@
                             <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
                           </div>
                           
-                          <button class="bg-[#3752FD] text-xs  text-white py-2 px-4 rounded-md">Completed</button>
+                          <button class="completed bg-[#3752FD] text-xs hover:bg-slate-500  text-white py-2 px-4 rounded-md disabled:bg-gray-300">Completed</button>
                       </div>
                   </div>
                   <!-- Card box -->
@@ -245,7 +244,7 @@
 
                 
                <div class="text-center px-5 pt-2">
-                <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                <button class="bg-[#3752FD] text-sm text-white hover:bg-slate-500 py-2 px-4 rounded-md">Clear History</button>
                </div>
 
                <div class="border-dashed border-b border-slate-300"></div>
