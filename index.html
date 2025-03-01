@@ -8,47 +8,242 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Google font -->
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome -->
     <style>
         .poppins-regular {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
     </style>
-    
+
     <!-- Tailwind Css -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Tailwind Css -->
 </head>
 
 <body class="bg-[#f4f7ff] poppins-regular">
-    <main class="max-w-6xl mx-auto py-5">
+    <main class="max-w-6xl mx-auto py-5 space-y-5">
         <!-- nav area -->
-         
         <nav class="bg-white p-5 rounded-xl flex items-center justify-between">
             <div class="flex items-center gap-3">
-              <img class="w-10 h-10" src="assets/logo.png" alt="">
-  
-              <h2 class="text-2xl">Dev<span class="font-bold">Board</span></h2>
-  
+                <img class="w-10 h-10" src="assets/logo.png" alt="">
+
+                <h2 class="text-2xl">Dev<span class="font-bold">Board</span></h2>
+
             </div>
-  
+
             <div class="flex items-center gap-3">
-              <div>
-                  <h2 class="bg-[#F4F7FF] px-3 py-2 space-x-1 rounded-3xl text-xl font-semibold"><i class="text-[#3752FD] fa-solid fa-square-check"></i> <span>24</span></h2>
-              </div>
-  
-              <div>
-                  <img class="w-8 h-8" src="assets/theme-btn.png" alt="">
-              </div>
+                <div>
+                    <h2 class="bg-[#F4F7FF] px-3 py-2 space-x-1 rounded-3xl text-xl font-semibold"><i
+                            class="text-[#3752FD] fa-solid fa-square-check"></i> <span>24</span></h2>
+                </div>
+
+                <div>
+                    <img class="w-8 h-8" src="assets/theme-btn.png" alt="">
+                </div>
             </div>
-          </nav>
+        </nav>
+
         <!-- nav area -->
+
+        <!-- Dashboard Section -->
+        <section class="">
+
+<div class="grid grid-cols-4 gap-5">
+    
+            <!-- Operation area -->
+            <div class="col-span-3 bg-white rounded-xl ">
+               <!-- Operation Header area -->
+                <div class="grid p-5 grid-cols-4 gap-3">
+                    <div class="flex items-center justify-center col-span-1 gap-5 bg-[#F4F7FF] rounded-lg px-3 py-5">
+                        <div class="text-xl flex justify-center items-center bg-white w-10 h-10 rounded-full">
+                            <i class="text-[#3752FD] fa-solid fa-square-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-[#00303C]">Task Assigned </p>
+                            <h2 class="text-xl font-semibold">06</h2>
+                        </div>
+                    </div>
+    
+                    <div class="col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg 0 flex items-center py-5 px-10 gap-3">
+                      
+                        <div>
+                            <img class="w-12 h-12" src="assets/board.png" alt="">
+                        </div>
+    
+                        <h2 class="text-white text-md">Discover Something <br> New Today!</h2>
+    
+                    </div>
+    
+                    <div class="flex items-center justify-center col-span-1 gap-5 bg-[#F4F7FF] rounded-lg 0">
+                        <div class="text-xl flex justify-center items-center bg-white w-10 h-10 rounded-full">
+                            <img class="w-5" src="assets/calender.png" alt="">
+    
+                        </div>
+                        <div>
+                            <p class="text-sm text-[#00303C]">Wed, </p>
+                            <h2 class="text-md font-semibold text-[#00303C]">Jul 28 2025</h2>
+                        </div>
+                    </div>
+                </div>
+               <!-- Operation Header area -->
+
+               <div class="border-dashed border-b border-slate-300"></div>
+
+
+              <!-- Operation Body area -->
+               <div class="p-5 grid grid-cols-3 gap-5 ">
+                  <!-- Card box -->
+                  <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+                      <button class="py-2 px-4 bg-white text-sm rounded-md">ShopEase</button>
+                      <h1 class="text-lg font-semibold">Fix Mobile Button Issue </h1>
+                      <p class="text-xs p-2 bg-white rounded-lg text-slate-600">Debug using Chrome DevTools, check for overlappin..</p>
+                      
+                      
+                      <div class="border-dashed border-b border-slate-300"></div>
+                      
+                      <div class="flex justify-between">
+                          <div>
+                              <p class="text-xs">Deadline</p>
+                              <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
+                            </div>
+                            
+                            <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                        </div>
+                    </div>
+                    <!-- Card box -->
+
+
+                     <!-- Card box -->
+                  <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+                    <button class="py-2 px-4 bg-white text-sm rounded-md">ShopEase</button>
+                    <h1 class="text-lg font-semibold">Fix Mobile Button Issue </h1>
+                    <p class="text-xs p-2 bg-white rounded-lg text-slate-600">Debug using Chrome DevTools, check for overlappin..</p>
+                    
+                    
+                    <div class="border-dashed border-b border-slate-300"></div>
+                    
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs">Deadline</p>
+                            <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
+                          </div>
+                          
+                          <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                      </div>
+                  </div>
+                  <!-- Card box -->
+
+
+                   <!-- Card box -->
+                   <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+                    <button class="py-2 px-4 bg-white text-sm rounded-md">ShopEase</button>
+                    <h1 class="text-lg font-semibold">Fix Mobile Button Issue </h1>
+                    <p class="text-xs p-2 bg-white rounded-lg text-slate-600">Debug using Chrome DevTools, check for overlappin..</p>
+                    
+                    
+                    <div class="border-dashed border-b border-slate-300"></div>
+                    
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs">Deadline</p>
+                            <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
+                          </div>
+                          
+                          <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                      </div>
+                  </div>
+                  <!-- Card box -->
+
+
+                   <!-- Card box -->
+                   <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+                    <button class="py-2 px-4 bg-white text-sm rounded-md">ShopEase</button>
+                    <h1 class="text-lg font-semibold">Fix Mobile Button Issue </h1>
+                    <p class="text-xs p-2 bg-white rounded-lg text-slate-600">Debug using Chrome DevTools, check for overlappin..</p>
+                    
+                    
+                    <div class="border-dashed border-b border-slate-300"></div>
+                    
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs">Deadline</p>
+                            <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
+                          </div>
+                          
+                          <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                      </div>
+                  </div>
+                  <!-- Card box -->
+
+                   <!-- Card box -->
+                   <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+                    <button class="py-2 px-4 bg-white text-sm rounded-md">ShopEase</button>
+                    <h1 class="text-lg font-semibold">Fix Mobile Button Issue </h1>
+                    <p class="text-xs p-2 bg-white rounded-lg text-slate-600">Debug using Chrome DevTools, check for overlappin..</p>
+                    
+                    
+                    <div class="border-dashed border-b border-slate-300"></div>
+                    
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs">Deadline</p>
+                            <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
+                          </div>
+                          
+                          <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                      </div>
+                  </div>
+                  <!-- Card box -->
+
+                   <!-- Card box -->
+                   <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+                    <button class="py-2 px-4 bg-white text-sm rounded-md">ShopEase</button>
+                    <h1 class="text-lg font-semibold">Fix Mobile Button Issue </h1>
+                    <p class="text-xs p-2 bg-white rounded-lg text-slate-600">Debug using Chrome DevTools, check for overlappin..</p>
+                    
+                    
+                    <div class="border-dashed border-b border-slate-300"></div>
+                    
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs">Deadline</p>
+                            <h5 class="text-sm font-semibold text-[#00303C]">21 March 2025</h5>
+                          </div>
+                          
+                          <button class="bg-[#3752FD] text-sm text-white py-2 px-4 rounded-md">Completed</button>
+                      </div>
+                  </div>
+                  <!-- Card box -->
+
+                  
+
+               </div>
+              <!-- Operation Body area -->
+
+
+
+            </div>
+            <!-- Operation area -->
+
+           
+            <!-- History area -->
+            <div class="col-span-1 bg-white p-5 rounded-xl"></div>
+            <!-- History area -->
+</div>
+ 
+             
+        </section>
+        <!-- Dashboard Section -->
 
 
 
