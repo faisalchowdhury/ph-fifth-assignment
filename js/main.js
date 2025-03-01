@@ -91,3 +91,22 @@ for (let btn of completedBtns) {
 
 
 
+// Clear History
+
+document.getElementById('clear-history').addEventListener('click' , function(){
+   document.getElementById('notifications').innerHTML = "";
+
+})
+
+
+// Discover something new (Redirect to the new page)
+
+document.getElementById('discover').addEventListener('click' ,function(){
+    window.location.href = './faq.html'
+} );
+
+// Back to Desk (redirect to home page) back-to-desk
+
+document.getElementById('back-to-desk').addEventListener('click' ,function(){
+    window.location.href = './index.html'
+} );
